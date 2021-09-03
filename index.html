@@ -41,10 +41,27 @@
         <li><a class="px-3 py-4 d-block" href="#">ABOUT</a></li>
         <li><a class="px-3 py-4 d-block" href="#">SUPPORT</a></li>
       </ul>
-      <a class="px-3 py-4 d-block d-xl-none" href=""
-        ><img class="header__hamburger" src="images/hamberger-menu.svg" alt=""
-      /></a>
+      <figure class="px-3 py-4 d-block d-xl-none" href="">
+        <img
+          class="header__hamburger"
+          id="hamburgerMenu"
+          src="images/hamberger-menu.svg"
+          alt=""
+        />
+      </figure>
     </header>
+    <!-- ** components toggle by hamburger menu in header ** -->
+    <!-- backdrop -->
+    <div class="backdrop" id="backdrop"></div>
+    <!-- slide menu -->
+    <ul class="slide-menu" id="slideMenu">
+      <li><a href="#">PRODUCT</a></li>
+      <li><a href="#">PARTNER</a></li>
+      <li><a href="#">CONTACT</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">SUPPORT</a></li>
+    </ul>
+    <!-- **** -->
     <!-- aside -->
     <aside
       class="
@@ -92,6 +109,7 @@
       <figure>
         <img class="cover-fit" src="images/main-img02.jpg" />
       </figure>
+      <!-- container with whitespace around two sides -->
       <div class="content">
         <!-- slogan -->
         <section class="slogan">
@@ -337,4 +355,5 @@
       </div>
     </main>
   </body>
+  <script src="scripts/slideMenu.js"></script>
 </html>
