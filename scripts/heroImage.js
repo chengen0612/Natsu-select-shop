@@ -23,9 +23,9 @@ const changeImage = (element) => {
   }, 5000)
 }
 
-const executeHeroImage = () => {
+const executor = () => {
   const element = getDomElement()
   changeImage(element)
 }
 
-window.onload = executeHeroImage
+export default executor

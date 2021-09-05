@@ -60,10 +60,10 @@ const signEvent = (elements, func) => {
   hamburgerMenu.addEventListener('click', func)
 }
 
-const executeScript = () => {
+const executor = () => {
   const elements = getDomElements()
   const changeLayout = initializeChangeLayout(elements)
   signEvent(elements, changeLayout)
 }
 
-window.onload = executeScript
+export default executor
