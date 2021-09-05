@@ -7,9 +7,9 @@ const changeImage = (element) => {
   // initialize
   let index = 0
   const imageList = [
-    'images/main-img01.jpg',
-    'images/main-img02.jpg',
-    'images/main-img03.jpg'
+    'images/hero-images/hero-image-01.jpg',
+    'images/hero-images/hero-image-02.jpg',
+    'images/hero-images/hero-image-03.jpg'
   ]
   const duration = 1500
   element.style.transition = `${duration / 1000}s`
