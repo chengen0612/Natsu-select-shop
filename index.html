@@ -20,7 +20,7 @@
     <header
       class="
         header
-        px-4 px-md-5
+        container-header
         position-fixed
         start-0
         end-0
@@ -29,19 +29,19 @@
         align-items-center
       "
     >
-      <div class="d-block d-xxl-none">
-        <a class="d-block" href="/">
+      <figure class="d-block d-xxl-none">
+        <a href="/">
           <img class="logo" src="images/logo.svg" alt="logo" />
         </a>
-      </div>
-      <ul class="d-none d-xl-flex">
-        <li><a class="px-3 py-4 d-block" href="/">PRODUCT</a></li>
-        <li><a class="px-3 py-4 d-block" href="/">PARTNER</a></li>
-        <li><a class="px-3 py-4 d-block" href="/">CONTACT</a></li>
-        <li><a class="px-3 py-4 d-block" href="/">ABOUT</a></li>
-        <li><a class="px-3 py-4 d-block" href="/">SUPPORT</a></li>
+      </figure>
+      <ul class="h-100 d-none d-xl-flex align-items-stretch">
+        <li class="header__link"><a href="/">PRODUCT</a></li>
+        <li class="header__link"><a href="/">PARTNER</a></li>
+        <li class="header__link"><a href="/">CONTACT</a></li>
+        <li class="header__link"><a href="/">ABOUT</a></li>
+        <li class="header__link"><a href="/">SUPPORT</a></li>
       </ul>
-      <figure class="px-3 py-4 d-block d-xl-none">
+      <figure class="d-block d-xl-none">
         <img
           class="header__hamburger"
           id="hamburgerMenu"
@@ -50,7 +50,7 @@
         />
       </figure>
     </header>
-    <!-- ** components toggle by hamburger menu in header ** -->
+    <!-- ** components toggle by hamburger menu ** -->
     <!-- backdrop -->
     <div class="backdrop" id="backdrop"></div>
     <!-- slide menu -->
@@ -61,8 +61,9 @@
       <li><a href="/">ABOUT</a></li>
       <li><a href="/">SUPPORT</a></li>
     </ul>
-    <!-- **** -->
-    <!-- aside -->
+    <!--  -->
+
+    <!-- sidebar -->
     <aside
       class="
         sidebar
@@ -71,20 +72,18 @@
         bottom-0
         d-none d-xxl-flex
         flex-column
-        justify-content-between
+        justify-content-around
         align-items-center
       "
     >
-      <a class="mt-4" href="/"
-        ><img class="logo" src="images/logo.svg" alt="logo"
-      /></a>
+      <a href="/"><img class="logo" src="images/logo.svg" alt="logo" /></a>
       <div>
         <span class="sidebar__slogan">
           年を重ねるごとに美しくなり、<br />
           その温かい優しさに私たちが惹かれている。
         </span>
       </div>
-      <ul class="mb-5 d-flex">
+      <ul class="d-flex">
         <li>
           <a class="h-100 d-block px-2" href="/"
             ><img
@@ -108,8 +107,9 @@
         </li>
       </ul>
     </aside>
+
     <!-- main -->
-    <main class="content-box">
+    <main class="container-outer">
       <!-- hero image -->
       <figure class="hero-image__top">
         <img
@@ -118,17 +118,16 @@
           src="images/hero-images/hero-image-01.jpg"
         />
       </figure>
-      <!-- container with whitespace around two sides -->
-      <div class="content">
-        <!-- slogan -->
-        <section class="slogan">
-          <div class="slogan__line mx-auto"></div>
-          <p class="text-center my-3">
-            私はダミーです。私はダミーです。私はダミーです。私はダミーです。私はダミーです。
-          </p>
-          <div class="slogan__line mx-auto"></div>
-        </section>
-        <!-- founders -->
+      <!-- slogan -->
+      <section class="container-m my-large">
+        <div class="slogan__line mx-auto"></div>
+        <p class="text-center my-3">
+          私はダミーです。私はダミーです。私はダミーです。私はダミーです。私はダミーです。
+        </p>
+        <div class="slogan__line mx-auto"></div>
+      </section>
+      <!-- founders -->
+      <section class="container-m">
         <article
           class="
             founder
@@ -168,215 +167,210 @@
             この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
           </p>
         </article>
-        <div class="separate-line"></div>
-        <!-- products -->
-        <section class="product">
-          <h4 class="section-title">PRODUCT</h4>
-          <div class="product__container row row-cols-2 row-cols-md-4 g-4">
-            <div class="product__card col">
-              <a href="/">
-                <figure class="product__image-top">
-                  <img
-                    class="product__image cover-fit"
-                    src="images/products/pouch.jpg"
-                  />
-                </figure>
-                <p>小物入れ</p>
-              </a>
-            </div>
-            <div class="product__card col">
-              <a href="/">
-                <figure class="product__image-top">
-                  <img
-                    class="product__image cover-fit"
-                    src="images/products/tote.jpg"
-                  />
-                </figure>
-                <p>トート</p>
-              </a>
-            </div>
-            <div class="product__card col">
-              <a href="/">
-                <figure class="product__image-top">
-                  <img
-                    class="product__image cover-fit"
-                    src="images/products/coin-purse.jpg"
-                  />
-                </figure>
-                <p>コンパクト</p>
-              </a>
-            </div>
-            <div class="product__card col">
-              <a href="/">
-                <figure class="product__image-top">
-                  <img
-                    class="product__image cover-fit"
-                    src="images/products/long-wallet.jpg"
-                  />
-                </figure>
-                <p>長財布</p>
-              </a>
-            </div>
-            <div class="product__card col">
-              <a href="/">
-                <figure class="product__image-top">
-                  <img
-                    class="product__image cover-fit"
-                    src="images/products/card-case.jpg"
-                  />
-                </figure>
-                <p>名刺入れ</p>
-              </a>
-            </div>
-            <div class="product__card col">
-              <a href="/">
-                <figure class="product__image-top">
-                  <img
-                    class="product__image cover-fit"
-                    src="images/products/leather-goods.jpg"
-                  />
-                </figure>
-                <p>革小物</p>
-              </a>
-            </div>
-            <div class="product__card col">
-              <a href="/">
-                <figure class="product__image-top">
-                  <img
-                    class="product__image cover-fit"
-                    src="images/products/handbag.jpg"
-                  />
-                </figure>
-                <p>ハンドバッグ</p>
-              </a>
-            </div>
-            <div class="product__card col">
-              <a href="/">
-                <figure class="product__image-top">
-                  <img
-                    class="product__image cover-fit"
-                    src="images/products/clip-wallet.jpg"
-                  />
-                </figure>
-                <p>マネークリップ</p>
-              </a>
-            </div>
-          </div>
-          <div class="subpage__btn text-center" role="button">
-            <a href="/">MORE</a>
-          </div>
-        </section>
-        <div class="separate-line"></div>
-        <!-- partners -->
-        <section class="partner">
-          <h4 class="section-title">PARTNER</h4>
-          <div class="partner__container">
-            <div class="d-inline-flex align-items-stretch">
-              <article class="partner__card d-flex flex-column text-center">
-                <figure class="partner__photo">
-                  <img class="cover-fit" src="images/partners/pagot.png" />
-                </figure>
-                <h5 class="partner__name">PAGOT</h5>
-                <p class="partner__info flex-grow-1 text-start">
-                  一緒に歳月を重ねていけるバッグを作りたい・・・そんな想いから『100年使えるバッグ』がPAGOTの向かう先となりました。
-                </p>
-              </article>
-              <article class="partner__card d-flex flex-column text-center">
-                <figure class="partner__photo">
-                  <img class="cover-fit" src="images/partners/tsuchiya.jpg" />
-                </figure>
-                <h5 class="partner__name">土屋鞄製作所</h5>
-                <p class="partner__info flex-grow-1 text-start">
-                  選び抜かれた素材。飽きのこないシンプルな形。長く愛していただける相棒を目指して、時間をかけ、人と思いをしなやかにつないでいく。
-                </p>
-              </article>
-              <article class="partner__card d-flex flex-column text-center">
-                <figure class="partner__photo">
-                  <img
-                    class="cover-fit"
-                    src="images/partners/kaleidoscope.jpg"
-                  />
-                </figure>
-                <h5 class="partner__name">kaleidoscope</h5>
-                <p class="partner__info flex-grow-1 text-start">
-                  「飽きのこないシンプルなデザイン」「経年変化により味わいの増す素材」、
-                  手作業による丁寧な仕立てを心がけています。
-                </p>
-              </article>
-              <article class="partner__card d-flex flex-column text-center">
-                <figure class="partner__photo">
-                  <img
-                    class="cover-fit"
-                    src="images/partners/hsu-daughter.jpg"
-                  />
-                </figure>
-                <h5 class="partner__name">Hsu & Daughter</h5>
-                <p class="partner__info flex-grow-1 text-start">
-                  常に寄り添いたい大切な人への贈り物。人々の繋がりを形にするために、私たちはものづくりを続けていく。
-                </p>
-              </article>
-            </div>
-          </div>
-          <div class="subpage__btn text-center" role="button">
-            <a href="/">MORE</a>
-          </div>
-        </section>
-        <div class="separate-line"></div>
-        <!-- support -->
-        <section
-          class="
-            support
-            d-flex
-            flex-column flex-lg-row
-            justify-content-around
-            align-items-center align-items-lg-start
-          "
-        >
-          <figure class="support__image">
-            <img class="cover-fit" src="images/support.jpg" />
-          </figure>
-          <div class="support__content">
-            <h4 class="section-title">SUPPORT</h4>
-            <p class="support__info">
-              サポート・修理やメンテナンス等のアフターケアから、カスタムオーダーまでサポートしております。ご注文前の確認やご相談もこちらから。
-            </p>
-            <div class="support__link text-end">
-              <a class="d-inline-flex align-items-center" href="/">
-                <div class="support__link__line"></div>
-                <span class="support__link__type">カスタマイズ</span>
+      </section>
+      <div class="separate-line"></div>
+      <!-- products -->
+      <section class="product container-m">
+        <h4 class="section-title">PRODUCT</h4>
+        <div class="product__container row row-cols-2 row-cols-md-4 g-4">
+          <div class="product__card col">
+            <a href="/">
+              <figure class="product__image-top">
                 <img
-                  class="support__link__arrow"
-                  src="images/icons/arrow-right.png"
+                  class="product__image cover-fit"
+                  src="images/products/pouch.jpg"
                 />
-              </a>
-            </div>
-            <div class="support__link text-end">
-              <a class="d-inline-flex align-items-center" href="/">
-                <div class="support__link__line"></div>
-                <span class="support__link__type">メインテナンス</span>
-                <img
-                  class="support__link__arrow"
-                  src="images/icons/arrow-right.png"
-                />
-              </a>
-            </div>
-            <div class="support__link text-end">
-              <a class="d-inline-flex align-items-center" href="/">
-                <div class="support__link__line"></div>
-                <span class="support__link__type">お問い合わせ</span>
-                <img
-                  class="support__link__arrow"
-                  src="images/icons/arrow-right.png"
-                />
-              </a>
-            </div>
+              </figure>
+              <p>小物入れ</p>
+            </a>
           </div>
-        </section>
-        <!-- footer -->
-        <footer class="footer text-center">
-          Copyright &copy; Natsu All rights reserved
-        </footer>
-      </div>
+          <div class="product__card col">
+            <a href="/">
+              <figure class="product__image-top">
+                <img
+                  class="product__image cover-fit"
+                  src="images/products/tote.jpg"
+                />
+              </figure>
+              <p>トート</p>
+            </a>
+          </div>
+          <div class="product__card col">
+            <a href="/">
+              <figure class="product__image-top">
+                <img
+                  class="product__image cover-fit"
+                  src="images/products/coin-purse.jpg"
+                />
+              </figure>
+              <p>コンパクト</p>
+            </a>
+          </div>
+          <div class="product__card col">
+            <a href="/">
+              <figure class="product__image-top">
+                <img
+                  class="product__image cover-fit"
+                  src="images/products/long-wallet.jpg"
+                />
+              </figure>
+              <p>長財布</p>
+            </a>
+          </div>
+          <div class="product__card col">
+            <a href="/">
+              <figure class="product__image-top">
+                <img
+                  class="product__image cover-fit"
+                  src="images/products/card-case.jpg"
+                />
+              </figure>
+              <p>名刺入れ</p>
+            </a>
+          </div>
+          <div class="product__card col">
+            <a href="/">
+              <figure class="product__image-top">
+                <img
+                  class="product__image cover-fit"
+                  src="images/products/leather-goods.jpg"
+                />
+              </figure>
+              <p>革小物</p>
+            </a>
+          </div>
+          <div class="product__card col">
+            <a href="/">
+              <figure class="product__image-top">
+                <img
+                  class="product__image cover-fit"
+                  src="images/products/handbag.jpg"
+                />
+              </figure>
+              <p>ハンドバッグ</p>
+            </a>
+          </div>
+          <div class="product__card col">
+            <a href="/">
+              <figure class="product__image-top">
+                <img
+                  class="product__image cover-fit"
+                  src="images/products/clip-wallet.jpg"
+                />
+              </figure>
+              <p>マネークリップ</p>
+            </a>
+          </div>
+        </div>
+        <div class="subpage__btn text-center" role="button">
+          <a href="/">MORE</a>
+        </div>
+      </section>
+      <div class="separate-line"></div>
+      <!-- partners -->
+      <section class="partner container-m">
+        <h4 class="section-title">PARTNER</h4>
+        <div class="partner__container">
+          <div class="d-inline-flex align-items-stretch">
+            <article class="partner__card d-flex flex-column text-center">
+              <figure class="partner__photo">
+                <img class="cover-fit" src="images/partners/pagot.png" />
+              </figure>
+              <h5 class="partner__name">PAGOT</h5>
+              <p class="partner__info flex-grow-1 text-start">
+                一緒に歳月を重ねていけるバッグを作りたい・・・そんな想いから『100年使えるバッグ』がPAGOTの向かう先となりました。
+              </p>
+            </article>
+            <article class="partner__card d-flex flex-column text-center">
+              <figure class="partner__photo">
+                <img class="cover-fit" src="images/partners/tsuchiya.jpg" />
+              </figure>
+              <h5 class="partner__name">土屋鞄製作所</h5>
+              <p class="partner__info flex-grow-1 text-start">
+                選び抜かれた素材。飽きのこないシンプルな形。長く愛していただける相棒を目指して、時間をかけ、人と思いをしなやかにつないでいく。
+              </p>
+            </article>
+            <article class="partner__card d-flex flex-column text-center">
+              <figure class="partner__photo">
+                <img class="cover-fit" src="images/partners/kaleidoscope.jpg" />
+              </figure>
+              <h5 class="partner__name">kaleidoscope</h5>
+              <p class="partner__info flex-grow-1 text-start">
+                「飽きのこないシンプルなデザイン」「経年変化により味わいの増す素材」、
+                手作業による丁寧な仕立てを心がけています。
+              </p>
+            </article>
+            <article class="partner__card d-flex flex-column text-center">
+              <figure class="partner__photo">
+                <img class="cover-fit" src="images/partners/hsu-daughter.jpg" />
+              </figure>
+              <h5 class="partner__name">Hsu & Daughter</h5>
+              <p class="partner__info flex-grow-1 text-start">
+                常に寄り添いたい大切な人への贈り物。人々の繋がりを形にするために、私たちはものづくりを続けていく。
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="subpage__btn text-center" role="button">
+          <a href="/">MORE</a>
+        </div>
+      </section>
+      <div class="separate-line"></div>
+      <!-- support -->
+      <section
+        class="
+          support
+          container-m
+          d-flex
+          flex-column flex-lg-row
+          justify-content-center
+          align-items-center align-items-lg-start
+        "
+      >
+        <figure class="support__image">
+          <img class="cover-fit" src="images/support.jpg" />
+        </figure>
+        <div class="support__content">
+          <h4 class="section-title">SUPPORT</h4>
+          <p class="support__info">
+            サポート・修理やメンテナンス等のアフターケアから、カスタムオーダーまでサポートしております。ご注文前の確認やご相談もこちらから。
+          </p>
+          <div class="support__link text-end">
+            <a class="d-inline-flex align-items-center" href="/">
+              <div class="support__link__line"></div>
+              <span class="support__link__type">カスタマイズ</span>
+              <img
+                class="support__link__arrow"
+                src="images/icons/arrow-right.png"
+              />
+            </a>
+          </div>
+          <div class="support__link text-end">
+            <a class="d-inline-flex align-items-center" href="/">
+              <div class="support__link__line"></div>
+              <span class="support__link__type">メインテナンス</span>
+              <img
+                class="support__link__arrow"
+                src="images/icons/arrow-right.png"
+              />
+            </a>
+          </div>
+          <div class="support__link text-end">
+            <a class="d-inline-flex align-items-center" href="/">
+              <div class="support__link__line"></div>
+              <span class="support__link__type">お問い合わせ</span>
+              <img
+                class="support__link__arrow"
+                src="images/icons/arrow-right.png"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer class="footer text-center">
+        Copyright &copy; Natsu All rights reserved
+      </footer>
     </main>
   </body>
   <!-- scripts -->

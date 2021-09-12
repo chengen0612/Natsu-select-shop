@@ -20,7 +20,7 @@
     <header
       class="
         header
-        px-4 px-md-5
+        container-header
         position-fixed
         start-0
         end-0
@@ -29,19 +29,19 @@
         align-items-center
       "
     >
-      <div class="d-block d-xxl-none">
-        <a class="d-block" href="/">
+      <figure class="d-block d-xxl-none">
+        <a href="/">
           <img class="logo" src="images/logo.svg" alt="logo" />
         </a>
-      </div>
-      <ul class="d-none d-xl-flex">
-        <li><a class="px-3 py-4 d-block" href="/">PRODUCT</a></li>
-        <li><a class="px-3 py-4 d-block" href="/">PARTNER</a></li>
-        <li><a class="px-3 py-4 d-block" href="/">CONTACT</a></li>
-        <li><a class="px-3 py-4 d-block" href="/">ABOUT</a></li>
-        <li><a class="px-3 py-4 d-block" href="/">SUPPORT</a></li>
+      </figure>
+      <ul class="h-100 d-none d-xl-flex align-items-stretch">
+        <li class="header__link"><a href="/">PRODUCT</a></li>
+        <li class="header__link"><a href="/">PARTNER</a></li>
+        <li class="header__link"><a href="/">CONTACT</a></li>
+        <li class="header__link"><a href="/">ABOUT</a></li>
+        <li class="header__link"><a href="/">SUPPORT</a></li>
       </ul>
-      <figure class="px-3 py-4 d-block d-xl-none">
+      <figure class="d-block d-xl-none">
         <img
           class="header__hamburger"
           id="hamburgerMenu"
@@ -64,7 +64,7 @@
     </ul>
     <!--  -->
 
-    <!-- aside -->
+    <!-- slide menu -->
     <aside
       class="
         sidebar
@@ -110,17 +110,17 @@
         </li>
       </ul>
     </aside>
-    <!-- aside end -->
+    <!-- slide menu end -->
 
-    <!-- container -->
-    <main class="content-box">
+    <!-- outer container -->
+    <main class="container-outer">
       <!-- hero image -->
       <figure class="procat__hero__top">
         <img class="cover-fit" src="images/hero-images/hero-image-03.jpg" />
       </figure>
       <h3 class="procat__title text-center">Item List</h3>
       <!--  -->
-      <div class="content d-flex mt-5">
+      <div class="container-m d-flex mt-5">
         <!-- aside -->
         <aside class="procat__aside d-none d-sm-block">
           <h5>Category</h5>
@@ -139,7 +139,14 @@
         </aside>
         <!--  -->
         <!-- listing -->
-        <section class="procat__listing row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-0 gx-4">
+        <section
+          class="
+            procat__listing
+            row row-cols-1 row-cols-md-2 row-cols-lg-3
+            mx-0
+            gx-4
+          "
+        >
           <!-- 1 -->
           <div class="procat__listing__card col">
             <figure class="procat__listing__image-top">
@@ -179,7 +186,7 @@
         Copyright &copy; Natsu All rights reserved
       </footer>
     </main>
-    <!-- container end -->
+    <!-- outer container end -->
 
     <!-- scripts -->
     <script type="module" src="scripts/main.js"></script>
