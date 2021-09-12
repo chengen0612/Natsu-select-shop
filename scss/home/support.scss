@@ -1,0 +1,53 @@
+// support
+.support {
+  column-gap: 10vw;
+}
+
+.support__image {
+  width: 35%;
+  @include responsive-rec(35%);
+}
+
+.support__content {
+  width: 45%;
+}
+
+.support__info {
+  padding: $blank-s 0;
+}
+
+.support__link {
+  height: 42px;
+}
+
+.support__link__line {
+  width: 96px;
+  border-top: 1px solid $c-secondary;
+  transform: translateY(-2px);
+}
+
+.support__link__type {
+  color: $c-secondary;
+}
+
+.support__link__arrow {
+  width: 9px;
+  transform: translateY(-2px);
+}
+
+.support__link__type,
+.support__link__arrow {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .support__image {
+    width: 100%;
+    padding-bottom: 48%;
+  }
+
+  .support__content {
+    width: 100%;
+    margin-top: $blank-s;
+  }
+}

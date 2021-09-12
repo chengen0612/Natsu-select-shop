@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Bell MT;
+  src: local(Bell MT), url(fonts/BELL.TTF);
+}
+
+// color
+$c-primary: #304b29;
+$c-secondary: #a3a39e;
+// $c-link: #938020ed;
+$c-link: #9f8a22ed;
+
+// font size
+$f-size-s: 1.2rem;
+$f-size-m: 2rem;
+$f-size-l: 2.4rem;
+$f-size-h4: 2.8rem;
+$f-size-h3: 3.2rem;
+
+// blank space
+$blank-xxs: 1rem;
+$blank-xs: 1.6rem;
+$blank-s: 2vw;
+$blank-m: 60px;
+$blank-l: 100px;
+
+// transition delay
+$delay-fast: 0.2s;
+$delay-normal: 0.5s;
+$delay-slow: 1s;

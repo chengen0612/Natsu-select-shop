@@ -1,0 +1,13 @@
+// backdrop
+.backdrop {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 108px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 4;
+  opacity: 0;
+  visibility: hidden;
+  transition: $delay-normal;
+}

@@ -1,0 +1,36 @@
+// hero image
+.procat__hero__top {
+  height: 360px;
+}
+
+.procat__title {
+  margin-top: $blank-l;
+  margin-bottom: $blank-m;
+  word-spacing: 1.5rem;
+}
+
+// aside
+.procat__aside {
+  width: 180px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+
+.procat__filter__link a {
+  display: block;
+}
+
+// listing
+.procat__listing {
+  flex-grow: 1;
+  &__card {
+    margin-bottom: $blank-s;
+  }
+  &__image-top {
+    @include responsive-rec(80%);
+  }
+  &__title {
+    margin-top: $blank-xxs;
+  }
+}

@@ -1,0 +1,49 @@
+// founder
+.founder__speak {
+  width: 45%;
+}
+
+.founder__arrow {
+  width: 30px;
+}
+
+.founder__photo {
+  width: 45%;
+  height: 0;
+  padding-bottom: 45%;
+}
+
+.founder__male {
+  background: linear-gradient(
+      rgba(125, 125, 125, 0.2),
+      rgba(125, 125, 125, 0.2)
+    ),
+    url("../images/founders/male-founder.jpg") center center;
+  background-size: cover;
+  transform: scaleX(-1); /* mirror */
+}
+
+.founder__female {
+  background: url("../images/founders/female-founder.jpg") center center;
+  background-size: cover;
+}
+
+.founder__blank {
+  height: $blank-m;
+}
+
+@media screen and (max-width: 768px) {
+  .founder__speak {
+    width: 100%;
+    margin-top: $blank-s;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+
+  .founder__photo {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+}

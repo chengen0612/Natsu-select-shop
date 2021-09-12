@@ -1,0 +1,10 @@
+// image container in rectangle shape that supports RWD
+@mixin responsive-rec($padding) {
+  height: 0;
+  padding-bottom: $padding;
+  position: relative;
+  & img {
+    position: absolute;
+    left: 0;
+  }
+}

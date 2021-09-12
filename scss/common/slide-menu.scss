@@ -1,0 +1,23 @@
+// slide menu
+.slide-menu {
+  background: #eee;
+  width: 240px;
+  position: fixed;
+  top: 108px;
+  right: -240px;
+  bottom: 0px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  transition: $delay-slow;
+  font-size: $f-size-l;
+  & li {
+    flex-grow: 1;
+    display: table;
+  }
+  & a {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+}

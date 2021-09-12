@@ -1,0 +1,47 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Bell MT", "Helvetica Neue", "Helvetica", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-size: $f-size-m;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: $f-size-h3;
+}
+
+h4 {
+  font-size: $f-size-h4;
+}
+
+h5 {
+  font-size: $f-size-l;
+}
+
+article,
+figure,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:link,
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+}

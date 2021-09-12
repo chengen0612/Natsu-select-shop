@@ -1,0 +1,76 @@
+.cover-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  width: 160px;
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    width: 140px;
+  }
+}
+
+.slogan__line {
+  width: 92%;
+  border-top: 1px solid $c-secondary;
+}
+
+.separate-line {
+  width: 92%;
+  margin: $blank-l auto;
+  border-top: 1px solid $c-secondary;
+}
+
+.section-title {
+  display: inline-block;
+  margin: 0;
+  padding: 0 10px 3px;
+  border-bottom: 2px solid $c-secondary;
+  font-weight: bold;
+}
+
+.subpage__btn a {
+  padding: 12px 24px;
+  border: 1px solid $c-primary;
+  border-radius: 5px;
+  background: $c-primary;
+  color: #fff;
+  font-size: $f-size-l;
+  letter-spacing: 2px;
+}
+
+// .subpage__btn a:hover {
+//   border: 1px solid $c-secondary;
+//   background: #fff;
+//   color: $c-primary;
+// }
+
+@media (hover: hover) {
+  .subpage__btn a:hover {
+    border: 1px solid $c-secondary;
+    background: #fff;
+    color: $c-primary;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .separate-line {
+    margin: $blank-m auto;
+  }
+}
+
+// blank space
+.mt-large {
+  margin-top: $blank-l;
+}
+.mb-large {
+  margin-bottom: $blank-l;
+}
+.my-large {
+  margin-top: $blank-l;
+  margin-bottom: $blank-l;
+}

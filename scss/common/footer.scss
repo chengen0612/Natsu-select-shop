@@ -1,0 +1,10 @@
+// footer
+.footer {
+  padding-top: $blank-l;
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    padding-top: $blank-m;
+  }
+}

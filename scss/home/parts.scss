@@ -1,0 +1,26 @@
+// hero image
+.hero-image__top {
+  height: 720px;
+}
+
+@media screen and (max-width: 576px) {
+  .hero-image__top {
+    height: 360px;
+  }
+}
+
+// :hover
+@media (hover: hover) {
+  .product__card:hover .product__image {
+    filter: brightness(90%);
+    transform: translateZ(0) scale(1.2);
+  }
+  // .partner__btn a:hover {
+  //   background: #fff;
+  //   color: $c-link;
+  // }
+  .slide-menu li:hover a {
+    background: $c-primary;
+    color: #fff;
+  }
+}

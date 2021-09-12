@@ -1,0 +1,17 @@
+// product
+.product__container {
+  padding: $blank-m 0;
+}
+
+.product__card {
+  text-align: center;
+  font-size: $f-size-l;
+}
+
+.product__image-top {
+  @include responsive-rec(100%);
+  overflow: hidden;
+  & .product__image {
+    transition: $delay-slow;
+  }
+}

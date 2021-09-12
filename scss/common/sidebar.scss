@@ -1,0 +1,15 @@
+// sidebar
+.sidebar {
+  width: 18vw;
+  background: #eee;
+  z-index: 5;
+}
+
+.sidebar__slogan {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.sidebar__icon {
+  width: 36px;
+}

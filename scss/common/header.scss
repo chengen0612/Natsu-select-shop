@@ -1,0 +1,21 @@
+// header
+.header {
+  height: 108px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 5px 24px rgba(0, 0, 0, 0.1);
+  font-size: $f-size-l;
+  z-index: 4;
+}
+
+.header__link a {
+  height: 100%;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__hamburger {
+  width: 30px;
+  height: 30px;
+}

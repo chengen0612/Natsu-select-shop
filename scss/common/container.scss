@@ -1,0 +1,29 @@
+@mixin horizontal-padding($length) {
+  padding-left: $length;
+  padding-right: $length;
+}
+
+// outer wrapper
+.container-outer {
+  padding: 108px 0 0 18vw;
+}
+
+// content wrapper
+.container-m,
+.container-header {
+  @include horizontal-padding(3vw);
+}
+
+@media screen and (max-width: 1400px) {
+  // outer wrapper
+  .container-outer {
+    padding: 108px 0 0 0;
+  }
+  // content wrapper
+  .container-m {
+    @include horizontal-padding(10vw);
+  }
+  .container-header {
+    @include horizontal-padding(8vw);
+  }
+}
