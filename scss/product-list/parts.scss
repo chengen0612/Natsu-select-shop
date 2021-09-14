@@ -1,28 +1,28 @@
 // hero image
-.procat__hero__top {
+.pl__hero__top {
   height: 360px;
 }
 
-.procat__headline {
+.pl__headline {
   padding-top: $blank-l;
   padding-bottom: $blank-m;
   word-spacing: 1.5rem;
 }
 
 // aside
-.procat__aside {
+.pl__aside {
   flex: 0 0 150px;
   align-self: start;
   position: sticky;
   top: 120px;
 }
 
-.procat__filter__link a {
+.pl__filter__link a {
   display: block;
 }
 
 // listing
-.procat__listing {
+.pl__listing {
   flex-grow: 1;
   &__card {
     margin-bottom: $blank-s;
@@ -35,7 +35,7 @@
   }
 }
 
-// button to show filter model
+// button to show filter modal
 .filter-btn {
   width: 60px;
   height: 60px;
