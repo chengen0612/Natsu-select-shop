@@ -3,18 +3,18 @@
   height: 360px;
 }
 
-.procat__title {
-  margin-top: $blank-l;
-  margin-bottom: $blank-m;
+.procat__headline {
+  padding-top: $blank-l;
+  padding-bottom: $blank-m;
   word-spacing: 1.5rem;
 }
 
 // aside
 .procat__aside {
-  width: 180px;
-  position: relative;
-  top: 0;
-  bottom: 0;
+  flex: 0 0 150px;
+  align-self: start;
+  position: sticky;
+  top: 120px;
 }
 
 .procat__filter__link a {
@@ -32,5 +32,24 @@
   }
   &__title {
     margin-top: $blank-xxs;
+  }
+}
+
+// button to show filter model
+.filter-btn {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: -100px;
+  bottom: $blank-m;
+  background: $c-link;
+  border: unset;
+  border-radius: 50%;
+  outline: unset;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.8);
+  font-size: $f-size-s;
+  transition: $delay-normal;
+  &.visible {
+    right: 18px;
   }
 }
