@@ -11,6 +11,9 @@
   flex-direction: column;
   transition: $delay-slow;
   font-size: $f-size-l;
+  &.visible {
+    right: 0px;
+  }
   & li {
     flex-grow: 1;
     display: table;

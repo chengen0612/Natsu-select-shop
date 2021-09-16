@@ -1,69 +1,40 @@
-const getDomElements = () => {
+export default function () {
+  // get dom elements
   const hamburgerMenu = document.getElementById('hamburgerMenu')
   const slideMenu = document.getElementById('slideMenu')
   const body = document.getElementsByTagName('body')[0]
   const backdrop = document.getElementById('backdrop')
-  return { hamburgerMenu, slideMenu, body, backdrop }
-}
 
-// return closure
-const initializeChangeLayout = (elements) => {
-  const { slideMenu, body, backdrop } = elements
-  // set state
-  let isActive = false
-  // declare variables
-  const scrollbarWidth = window.innerWidth - body.offsetWidth
-  const attributeSet = {
-    active: {
-      slideMenu: {
-        right: '-240px'
-      },
-      body: {
-        overflow: 'visible',
-        width: window.innerWidth
-      },
-      backdrop: {
-        visibility: 'hidden',
-        opacity: 0
-      }
-    },
-    inactive: {
-      slideMenu: {
-        right: '-0px'
-      },
-      body: {
-        overflow: 'hidden',
-        width: `calc(100vw - ${scrollbarWidth}px)`
-      },
-      backdrop: {
-        visibility: 'visible',
-        opacity: 1
-      }
+  const toggleSlideMenu = () => {
+    slideMenu.classList.toggle('visible')
+  }
+
+  const initToggleBody = () => {
+    let isFixed = false
+    const scrollbarWidth = window.innerWidth - body.offsetWidth
+
+    const toggleBody = () => {
+      body.classList.toggle('isfixed')
+      isFixed ? body.style.width = 'unset'
+        : body.style.width = `calc(100vw - ${scrollbarWidth}px)`
+
+      isFixed = !isFixed
     }
+
+    return toggleBody
   }
-  // inner function to change layout
-  return function () {
-    const layout = isActive ? attributeSet['active'] : attributeSet['inactive']
 
-    slideMenu.style.right = layout['slideMenu']['right']
-    body.style.overflow = layout['body']['overflow']
-    body.style.width = layout['body']['width'] // prevent resizing
-    backdrop.style.visibility = layout['backdrop']['visibility']
-    backdrop.style.opacity = layout['backdrop']['opacity']
-
-    isActive = !isActive
+  const toggleBackdrop = () => {
+    backdrop.classList.toggle('visible')
   }
-}
 
-const signEvent = (elements, func) => {
-  const { hamburgerMenu } = elements
-  hamburgerMenu.addEventListener('click', func)
-}
+  const executor = () => {
+    toggleSlideMenu()
+    toggleBody()
+    toggleBackdrop()
+  }
 
-const executor = () => {
-  const elements = getDomElements()
-  const changeLayout = initializeChangeLayout(elements)
-  signEvent(elements, changeLayout)
-}
+  const toggleBody = initToggleBody()
 
-export default executor
+  hamburgerMenu.addEventListener('click', executor)
+}
