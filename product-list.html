@@ -64,7 +64,7 @@
     </ul>
     <!--  -->
 
-    <!-- slide menu -->
+    <!-- aside -->
     <aside
       class="
         sidebar
@@ -188,9 +188,31 @@
     </main>
     <!-- outer container end -->
 
+    <!-- category button -->
     <button class="filter-btn d-block d-sm-none" id="categoryBtn">
       カテゴリ
     </button>
+
+    <!-- category modal -->
+    <div class="filter-modal" id="filterModal">
+      <!-- button to close modal -->
+      <menu class="filter-modal__menu">
+        <button class="filter-modal__close-btn" id="closeFilterBtn">X</button>
+      </menu>
+      <ul class="filter-modal__list">
+        <!-- re-render screen with clicked category -->
+        <li class="filter-modal__option">小物入れ</li>
+        <li class="filter-modal__option">トート</li>
+        <li class="filter-modal__option">コンパクト</li>
+        <li class="filter-modal__option">長財布</li>
+        <li class="filter-modal__option">名刺入れ</li>
+        <li class="filter-modal__option">革小物</li>
+        <li class="filter-modal__option">ハンドバッグ</li>
+        <li class="filter-modal__option">マネークリップ</li>
+      </ul>
+    </div>
+
+    <!-- category modal end -->
 
     <!-- scripts -->
     <script type="module" src="scripts/prodList.js"></script>

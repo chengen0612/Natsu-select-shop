@@ -7,6 +7,9 @@ body {
     "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   font-size: $f-size-m;
   line-height: 48px;
+  &.isfixed {
+    overflow: hidden;
+  }
 }
 
 h3 {
@@ -23,6 +26,7 @@ h5 {
 
 article,
 figure,
+menu,
 ul,
 p {
   margin: 0;

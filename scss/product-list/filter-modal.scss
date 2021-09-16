@@ -1,0 +1,59 @@
+// container
+.filter-modal {
+  width: 100%;
+  height: calc(100vh - 108px);
+  background: #fff;
+  // height: 0px;
+  position: fixed;
+  // top: 108px;
+  top: -100vh;
+  overflow-y: scroll;
+  visibility: hidden;
+  // opacity: 0;
+  transition: $delay-normal;
+  &.visible {
+    // height: calc(100vh - 108px);
+    top: 108px;
+    visibility: visible;
+    // opacity: 1;
+  }
+}
+
+// menu
+.filter-modal {
+  &__menu {
+    padding: 3px $blank-xs 3px 0;
+    background: #eee;
+    position: sticky;
+    top: 0px;
+    border-bottom: 1px solid $c-secondary;
+    text-align: right;
+  }
+  &__close-btn {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: unset;
+    border-radius: 50%;
+    outline: unset;
+    font-size: $f-size-s;
+    line-height: 30px;
+    opacity: 0.7;
+  }
+}
+
+// ul list
+.filter-modal {
+  &__list {
+    text-align: center;
+  }
+  &__option {
+    padding: $blank-xxs 0px;
+    cursor: pointer;
+    @media (hover: hover) {
+      &:hover {
+        background: #bbb;
+      }
+    }
+  }
+}
