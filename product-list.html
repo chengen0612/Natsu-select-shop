@@ -110,7 +110,7 @@
         </li>
       </ul>
     </aside>
-    <!-- slide menu end -->
+    <!-- aside end -->
 
     <!-- outer container -->
     <main class="container-outer">
@@ -188,19 +188,19 @@
     </main>
     <!-- outer container end -->
 
-    <!-- category button -->
-    <button class="filter-btn d-block d-sm-none" id="categoryBtn">
+    <!-- button to show filter modal -->
+    <button class="pl__open-filter-btn d-block d-sm-none" id="openFilterBtn">
       カテゴリ
     </button>
 
-    <!-- category modal -->
+    <!-- filter modal -->
     <div class="filter-modal" id="filterModal">
-      <!-- button to close modal -->
+      <!-- button to close filter modal -->
       <menu class="filter-modal__menu">
         <button class="filter-modal__close-btn" id="closeFilterBtn">X</button>
       </menu>
       <ul class="filter-modal__list">
-        <!-- re-render screen with clicked category -->
+        <!-- re-render listing section with category selected -->
         <li class="filter-modal__option">小物入れ</li>
         <li class="filter-modal__option">トート</li>
         <li class="filter-modal__option">コンパクト</li>
@@ -211,8 +211,7 @@
         <li class="filter-modal__option">マネークリップ</li>
       </ul>
     </div>
-
-    <!-- category modal end -->
+    <!-- filter modal end -->
 
     <!-- scripts -->
     <script type="module" src="scripts/prodList.js"></script>

@@ -1,18 +1,19 @@
 export default function () {
-  const categoryBtn = document.getElementById('categoryBtn')
+  const openFilterBtn = document.getElementById('openFilterBtn')
   const prodListHeadline = document.getElementById('prodListHeadline')
 
+  // keep it for modularization
   // const getOffsetTop = element => {
   //   const offsetTop = element.offsetTop
   //   return offsetTop
   // }
 
   const showBtn = () => {
-    categoryBtn.classList.add('visible')
+    openFilterBtn.classList.add('visible')
   }
 
   const hideBtn = () => {
-    categoryBtn.classList.remove('visible')
+    openFilterBtn.classList.remove('visible')
   }
 
   const handleBtn = (yCoord) => {

@@ -1,7 +1,7 @@
 import bodystyle from "./modules/bodystyle.js"
 
 export default function () {
-  const categoryBtn = document.getElementById('categoryBtn')
+  const openFilterBtn = document.getElementById('openFilterBtn')
   const categoryModal = document.getElementById('filterModal')
   const closeFilterBtn = document.getElementById('closeFilterBtn')
 
@@ -16,6 +16,6 @@ export default function () {
 
   const changeBodyStyle = bodystyle.initHandler()
 
-  categoryBtn.addEventListener('click', executor)
+  openFilterBtn.addEventListener('click', executor)
   closeFilterBtn.addEventListener('click', executor)
 }
