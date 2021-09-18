@@ -6,12 +6,22 @@
 .product__card {
   text-align: center;
   font-size: $f-size-l;
+  &:active .product__image {
+    filter: brightness(75%);
+  }
 }
 
 .product__image-top {
   @include responsive-rec(100%);
   overflow: hidden;
-  & .product__image {
-    transition: $delay-slow;
+}
+
+@media (hover: hover) {
+  .product__card:hover .product__image {
+    filter: brightness(75%);
+    transform: translateZ(0) scale(1.15);
+  }
+  .product__image {
+    transition: $delay-normal;
   }
 }

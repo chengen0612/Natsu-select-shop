@@ -22,5 +22,16 @@
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    &:active {
+      background: $c-primary;
+      color: #fff;
+    }
+  }
+}
+
+@media (hover: hover) {
+  .slide-menu a:hover {
+    background: $c-primary;
+    color: #fff;
   }
 }
