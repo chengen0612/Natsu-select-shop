@@ -74,3 +74,11 @@
   margin-top: $blank-l;
   margin-bottom: $blank-l;
 }
+
+// anchor
+.anchor-point {
+  height: 0;
+  display: block;
+  position: relative;
+  top: -120px;
+}
