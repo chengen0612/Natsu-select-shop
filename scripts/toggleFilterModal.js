@@ -3,6 +3,7 @@ import bodystyle from "./modules/bodystyle.js"
 export default function () {
   const openFilterBtn = document.getElementById('openFilterBtn')
   const categoryModal = document.getElementById('filterModal')
+  const filterOptions = document.getElementsByClassName('filterOption')
   const closeFilterBtn = document.getElementById('closeFilterBtn')
 
   const toggleModal = () => {
@@ -18,4 +19,8 @@ export default function () {
 
   openFilterBtn.addEventListener('click', executor)
   closeFilterBtn.addEventListener('click', executor)
+
+  for (const option of filterOptions) {
+    option.addEventListener('click', executor)
+  }
 }

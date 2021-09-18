@@ -48,16 +48,11 @@
   &__list {
     text-align: center;
   }
-  &__option {
+  &__option a{
     padding: $blank-xxs 0px;
-    cursor: pointer;
+    display: block;
     &:active {
       background: #bbb;
-    }
-    @media (hover: hover) {
-      &:hover {
-        background: #bbb;
-      }
     }
   }
 }
